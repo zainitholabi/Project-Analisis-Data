@@ -59,7 +59,7 @@ order_status, common_status = function.createOrderStatus()
 st.header("Dashboard E-Commerce")
 
 # Daily Orders
-st.subheader("Orders Harian")
+st.subheader("Order Harian")
 
 col1, col2 = st.columns(2)
 
