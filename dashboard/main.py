@@ -48,12 +48,12 @@ main_df = all_df[(all_df["order_approved_at"] >= str(start_date)) &
 function = DataAnalyzer(main_df)
 map_plot = BrazilMapPlotter(data, plt, mpimg, urllib, st)
 
-daily_orders_df = function.create_daily_orders_df()
-sum_spend_df = function.create_sum_spend_df()
-sum_order_items_df = function.create_sum_order_items_df()
-review_score, common_score = function.review_score_df()
-state, most_common_state = function.create_bystate_df()
-order_status, common_status = function.create_order_status()
+daily_orders_df = function.createDataFrameDailyOrders()
+sum_spend_df = function.createDataFrameSumSpend()
+sum_order_items_df = function.createDataFrameSumOrderItems()
+review_score, common_score = function.dataFrameReviewScore()
+state, most_common_state = function.createDataFrameBystate()
+order_status, common_status = function.createOrderStatus()
 
 # Title
 st.header("E-Commerce Dashboard :convenience_store:")
